@@ -1,14 +1,19 @@
 package com.company;
 
 public class Drink implements MenuItem {
-private 
+    private double Price;
+    private String Name;
+    public Drink (double Price, String Name){
+        this.Name = Name;
+        this.Price = Price;
+    }
     @Override
     public String getName() {
-        return null;
+        return Name;
     }
 
     @Override
     public double getPrice() {
-        return 0;
+        return Price;
     }
 }
